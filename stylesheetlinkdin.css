@@ -2,13 +2,14 @@
   margin: 0;
   padding: 10;
   box-sizing: 0;
+  background-color: rgb(215, 215, 215);
 }
 
 .container {
   height: 100vh;
   display: grid;
   grid-template:
-    "header    header  header" 150px
+    "header    header  header" 115px
     " left   middle right" 2fr
     " left   middle right" 1fr /
          1fr     2fr     1fr;
@@ -17,38 +18,39 @@
 
 .header {
   grid-area: header;
-  background-color: rgb(0, 255, 238);
+  background-color: rgba(29, 113, 248, 0.5);
 }
 .left {
   grid-area: left;
-  background-color: blue;
-  margin-left: 400px;
+  background-color: rgba(29, 113, 248, 0.5);
+  margin-left: 100px;
 }
  
 .right {
   grid-area: right;
-  background-color: cyan;
-  margin-right: 400px;
+  background-color: rgba(29, 113, 248, 0.5);
+  margin-right: 100px;
 }
 .middle {
   grid-area: middle;
-  background-color: blueviolet;
+  background-color: rgba(141, 180, 244, 0.5);
 }
 
-@media screen and ( max-width: 4000px ) {
+@media screen and ( max-width: 990px ) {
   .container {
     grid-template:
     "header header " 150px
     "left   middle" 2fr
     "left   middle" 1fr/
     1fr  2fr
+    
   }
   .right .header {
     display: none;
   }
 }
   
-@media screen and ( max-width: 2500px ) {
+@media screen and ( max-width: 600px ) {
   .container {
     grid-template:
     "  header " 150px
