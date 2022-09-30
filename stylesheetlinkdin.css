@@ -1,22 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: none;
+}
+
 .container {
-    height: 1000px;
-    display: grid;
-    grid-template:
-    "header header header " 1fr
-    "left middle right"  3fr
-    "left middle right"  3fr  /
-    1fr   2fr   1fr
+  height: 1000px;
+  display: grid;
+  grid-template:
+    "header header header header header" 20px
+    "whitespace left   middle right whitespace" 2fr
+    "whitespace left   middle right whitespace" 1fr /
+    1fr     1fr     2fr     1fr     1fr;
+  gap: 20px;
 }
 
 .header {
-    background-color: red;
+  grid-area: header;
+  background-color: red;
 }
 .left {
-    background-color: blue;
+  grid-area: left;
+  background-color: blue;
 }
-.right{
-    background-color: cyan;
+.right {
+  grid-area: right;
+  background-color: cyan;
 }
-.middle{
-    background-color: blueviolet;
+.middle {
+  grid-area: middle;
+  background-color: blueviolet;
+}
+
+.whitespace {
+  grid-area: whitespace;
+  background-color: rgb(220, 220, 220);
 }
