@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+height: 100vh;
+display: grid;
+grid-template: 
+"side-bar header  header" 50px
+"side-bar main-menu chat" 1fr/
+80px  1fr  5fr
+}
+
+.header{
+    grid-area: header;
+    background-color: darkgray;
+
+}
+
+.side-bar{
+   grid-area: side-bar;
+   background-color: lightskyblue;
+}
+
+.main-menu{
+    grid-area: main-menu;
+    background-color: grey;
+
+}
+
+.chat{
+    grid-area: chat;
+    background-color: beige;
+
+}
