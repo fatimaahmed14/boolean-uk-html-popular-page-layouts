@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template:
+    "header header header header" 50px
+    "left-menu inbox settings right-menu" 1fr/
+    1fr 2fr 1fr 50px
+}
+
+.header{
+    grid-area: header;
+    background-color: grey;
+}
+
+.left-menu{
+    grid-area: left-menu;
+    background-color: darkgrey;
+}
+
+.inbox{
+    grid-area: inbox;
+    background-color: lightblue;
+}
+
+.right-menu{
+    grid-area: right-menu;
+    background-color: black;
+}
